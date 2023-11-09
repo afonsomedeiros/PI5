@@ -74,7 +74,8 @@ Response
     "access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNDI4MjMwMywianRpIjoiODMwYjY2YTQtNTJmMy00NjM3LTkxNzEtYjY0NTk0YzhkYzgwIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6MSwibmJmIjoxNjM0MjgyMzAzLCJleHAiOjE2MzQyODMyMDN9.g94zTPJ7OH48OagLtikjUHZkdWlKqPzMcksxs1UEDeQ",
     "message": "Login succefull!",
     "refresh_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNDI4MjMwMywianRpIjoiOWYzYjhjNWUtNDg1Yy00NjBmLTk3MmYtNjRlNmI1MzI1Mzc2IiwidHlwZSI6InJlZnJlc2giLCJzdWIiOjEsIm5iZiI6MTYzNDI4MjMwMywiZXhwIjoxNjM2ODc0MzAzfQ.Qo_2yl1ZM56oh19qflQ8cSExPiPOO5UpkECxMS5aU8A"
-}```
+}
+```
 
 - [ ] `/admeasurement/new` Criação de nova medição.
 Request
