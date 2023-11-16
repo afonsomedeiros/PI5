@@ -1,0 +1,49 @@
+% rebase("master.html")
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <div>
+                <canvas id="chart1"></canvas>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    async function load_chart() {
+        let response = await fetch("/api/admeasurement");
+        let json = await response.json();
+
+        const ctx = document.getElementById('chart1');
+
+        let groups = Object.groupBy(json, ({ variable_id }) => variable_id);
+        console.log(groups)
+
+        let teste = Object.keys(groups).reduce(function(obj, x){
+            console.log(obj)
+            console.log(x)
+        })
+
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: json.map(({ date }) => date),
+                datasets: [{
+                    // label: '# of Votes',
+                    data: json.map(({ value }) => value),
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    }
+
+    load_chart();
+</script>

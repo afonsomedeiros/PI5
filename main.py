@@ -1,0 +1,13 @@
+import bottle
+from api import create_app as mount_api
+from app import create_app as mount_app
+from CONST import ROOT_PATH
+
+if __name__ == "__main__":
+    core = mount_app()
+
+    core.mount("/api/", mount_api())
+
+    bottle.TEMPLATE_PATH.insert(0, f"{ROOT_PATH}/app/views/")
+    
+    core.run(debug=True, reloader=True)
