@@ -50,10 +50,10 @@ users
 admeasurement.
 ```
 {
-  'code': int,
-  'device_id': int
-  'value': float
-  'collected_at': string
+  "code": "int",
+  "device_id": "int"
+  "value": "float",
+  "collected_at": "string"
 }
 ```
 
@@ -61,7 +61,43 @@ admeasurement.
 
 POST
 - [ ] `/user/auth` Autenticação do usuário.
+Request
+```json
+{
+  "email": "teste@teste.com",
+  "password": "123456"
+}
+```
+Response
+```json
+{
+    "access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNDI4MjMwMywianRpIjoiODMwYjY2YTQtNTJmMy00NjM3LTkxNzEtYjY0NTk0YzhkYzgwIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6MSwibmJmIjoxNjM0MjgyMzAzLCJleHAiOjE2MzQyODMyMDN9.g94zTPJ7OH48OagLtikjUHZkdWlKqPzMcksxs1UEDeQ",
+    "message": "Login succefull!",
+    "refresh_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTYzNDI4MjMwMywianRpIjoiOWYzYjhjNWUtNDg1Yy00NjBmLTk3MmYtNjRlNmI1MzI1Mzc2IiwidHlwZSI6InJlZnJlc2giLCJzdWIiOjEsIm5iZiI6MTYzNDI4MjMwMywiZXhwIjoxNjM2ODc0MzAzfQ.Qo_2yl1ZM56oh19qflQ8cSExPiPOO5UpkECxMS5aU8A"
+}
+```
+
 - [ ] `/admeasurement/new` Criação de nova medição.
+Request
+```
+{
+  "variable_id": "int",
+  "value": "float",
+  "date": "timestamp"
+}
+```
+Response.
+...
 
 GET
 - [ ] `/admeasurement[?device_id=0&between=yyyy-mm-dd,yyyy-mm-dd]` Retorna lista de medições e podeser filtrado por dispositivo e período.
+```json
+[
+  {
+    "code": "int"
+    "variable_id": "int":
+    "value": "float",
+    "date": "timestamp"
+  }
+]
+```
