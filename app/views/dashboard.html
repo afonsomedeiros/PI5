@@ -2,9 +2,138 @@
 
 <div class="container-fluid">
     <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-            <div>
-                <canvas id="chart1"></canvas>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-2">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <p>
+                        Com o objetivo de monitorar a umidade relativa do ar e a temperatura no Raspberry Pi, iremos
+                        utilizar o Sensor de Umidade e Temperatura DHT11. Este dispositivo é altamente recomendado para
+                        a obtenção precisa de dados de umidade e temperatura, os quais são transmitidos para o
+                        microcontrolador, como é o caso do Raspberry Pi. Vale destacar que o DHT11 gera um sinal digital
+                        como saída, o que assegura uma confiabilidade e estabilidade duradouras.
+                    </p>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div>
+                        <canvas id="chart1"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-2">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <p>
+                        O sensor de temperatura presente no DHT11 é um termistor do tipo NTC, enquanto o sensor de
+                        umidade adotado é do tipo HR202. O circuito interno desse sensor realiza a leitura dos dados dos
+                        sensores e estabelece comunicação com um microcontrolador de 8 bits de alto desempenho. Isso
+                        resulta em alta qualidade de medição, tempos de resposta rápidos e uma relação custo-benefício
+                        extremamente vantajosa.
+                    </p>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div>
+                        <canvas id="chart2"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-2">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <p>
+                        O sensor BMP180 é empregado para determinar tanto a pressão atmosférica quanto a altitude em
+                        determinado local. Este dispositivo utiliza princípios físicos fundamentais para fornecer
+                        medidas precisas e confiáveis. A pressão atmosférica, um parâmetro crucial em várias disciplinas
+                        científicas, é mensurada em milibares (mbar) ou pascal (Pa), proporcionando uma indicação direta
+                        das condições atmosféricas no local de medição.
+                    </p>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div>
+                        <canvas id="chart3"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-2">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <p>
+                        Para medir o índice de luminosidade, empregaremos o LDR (Light Dependent Resistor), também
+                        denominado como Resistor Variável em Resposta à Luz. Esse dispositivo é essencialmente um tipo
+                        de resistor cuja resistência oscila conforme a intensidade da radiação eletromagnética do
+                        espectro visível que o atinge.
+                    </p>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div>
+                        <canvas id="chart4"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-2">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <p>
+                        o BMP180 é capaz de calcular a altitude, um dado essencial em diversas aplicações, como na
+                        aviação e meteorologia. Utilizando métodos barométricos, este sensor avalia a variação da
+                        pressão atmosférica com a altitude para estimar com precisão a altura acima do nível do mar.
+                        Assim, o BMP180 desempenha um papel significativo em várias áreas do conhecimento,
+                        proporcionando dados valiosos para a pesquisa científica, o desenvolvimento tecnológico e a
+                        compreensão dos fenômenos atmosféricos.
+                    </p>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div>
+                        <canvas id="chart5"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-2">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <p>
+                        Para monitorar a qualidade do ar utilizamos o sensor MQ-135, que é um sensor de qualidade do ar
+                        eletroquímico, baseado na tecnologia MOSFET (metal-oxide-semicondutor field-effect transistor),
+                        que pode ser utilizado para detectar a presença de gases nocivos ao meio ambiente e à saúde
+                        humana, como amônia, dióxido de carbono, benzeno, óxido nítrico, fumaça e álcool.
+                    </p>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div>
+                        <canvas id="chart6"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-2">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <p>
+                        Objetivando monitorar o nível de chuva, utilizamos o módulo sensor de chuva, que é um
+                        dispositivo eletrônico que pode ser utilizado para detectar a presença de chuva. O módulo é
+                        composto por um sensor de chuva, uma placa de controle e um cabo de conexão.
+                    </p>
+                    <p>
+                        O sensor de chuva é um dispositivo simples que consiste em dois eletrodos que são conectados por
+                        uma fina película de óxido de metal. Quando a chuva cai sobre o sensor, a água molha a película
+                        e altera sua resistência elétrica. Essa alteração na resistência elétrica é detectada pela placa
+                        de controle, que envia um sinal digital ou analógico para indicar a presença de chuva.
+                    </p>
+                    <p>
+                        O módulo sensor de chuva possui uma tensão de operação de 3,3 a 5 V, uma corrente de saída de
+                        100 mA e uma sensibilidade ajustável via potenciômetro. O módulo também possui uma saída digital
+                        e uma saída analógica, o que o torna um dispositivo versátil para aplicações em automação.
+                    </p>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div>
+                        <canvas id="chart7"></canvas>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -15,34 +144,80 @@
         let response = await fetch("/api/admeasurement");
         let json = await response.json();
 
-        const ctx = document.getElementById('chart1');
+        var groups = Object.groupBy(json, ({ variable_id }) => variable_id);
+        let keys = Object.keys(groups);
 
-        let groups = Object.groupBy(json, ({ variable_id }) => variable_id);
-        console.log(groups)
+        keys.forEach((variable_id) => {
+            console.log(variable_id)
+            create_dataset(variable_id, groups[variable_id]);
+        });
 
-        let teste = Object.keys(groups).reduce(function(obj, x){
-            console.log(obj)
-            console.log(x)
-        })
+        
+        console.log(json.map(({ date }) => date))
+    }
 
+    function create_dataset(variable_id, data){
+        let label = "";
+        switch(variable_id){
+            case "1":
+                label = "Umidade Relativa do Ar";
+                break;
+            case "2":
+                label = "Temperatura";
+                break;
+            case "3":
+                label = "Pressão Atmosférica";
+                break;
+            case "4":
+                label = "Indice de incidencia solar (luminosidade)";
+                break;
+            case "5":
+                label = "Altitude";
+                break;
+            case "6":
+                label = "Qualidade do ar";
+                break;
+            case "7":
+                label = "Chuva";
+                break;
+        }
+        let dataset = {
+            label: label,
+            data: data.map(({ value }) => value),
+            borderColor: setBg(),
+            backgroundColor: setBg(),
+        }
+
+        const ctx = document.getElementById('chart'+variable_id);
+                
         new Chart(ctx, {
             type: 'bar',
             data: {
-                labels: json.map(({ date }) => date),
-                datasets: [{
-                    // label: '# of Votes',
-                    data: json.map(({ value }) => value),
-                    borderWidth: 1
-                }]
+                labels: data.map(({ date }) => {
+                    let new_date = new Date(date.split("T")[0].slice(0, -1));
+                    console.log(date);
+                    console.log(new_date);
+                    let year = new_date.getFullYear();
+                    let month = new_date.getMonth();
+                    let dt = new_date.getDate();
+                    return `${dt}/${month}/${year}`;
+
+                }),
+                datasets: [dataset]
             },
             options: {
-                scales: {
-                    y: {
-                        beginAtZero: true
-                    }
-                }
+                responsive: true
             }
         });
+    }
+
+    function remove_duplicates(data){
+        return [... new Set(data)]
+    }
+
+    const setBg = () => {
+        const randomColor = Math.floor(Math.random()*16777215).toString(16);
+        return "#" + randomColor;
     }
 
     load_chart();
