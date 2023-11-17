@@ -10,4 +10,4 @@ if __name__ == "__main__":
 
     bottle.TEMPLATE_PATH.insert(0, f"{ROOT_PATH}/app/views/")
     
-    core.run(debug=True, reloader=True)
+    core.run(debug=True, reloader=True, port=10000)
