@@ -11,7 +11,7 @@ from bson import json_util
 
 
 def get_uri():
-    return f"mongodb+srv://afonso2k:{parse.quote('leticia@2014')}@cluster0.r0cmo.mongodb.net/?retryWrites=true&w=majority"
+    return f"URI"
 
 
 def get_database(client: MongoClient, databasename):
