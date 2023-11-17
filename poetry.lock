@@ -16,7 +16,7 @@ name = "dnspython"
 version = "2.4.2"
 description = "DNS toolkit"
 optional = false
-python-versions = ">=3.8,<4.0"
+python-versions = ">=3.7,<4.0"
 files = [
     {file = "dnspython-2.4.2-py3-none-any.whl", hash = "sha256:57c6fbaaeaaf39c891292012060beb141791735dbb4004798328fc2c467402d8"},
     {file = "dnspython-2.4.2.tar.gz", hash = "sha256:8dcfae8c7460a2f84b4072e26f1c9f4101ca20c071649cb7c34e8b6a93d58984"},
@@ -251,5 +251,5 @@ files = [
 
 [metadata]
 lock-version = "2.0"
-python-versions = "^3.10"
+python-versions = "^3.7"
 content-hash = "b87ba47fd35f57aa71766a9db5ab4897898e1875ae5adb6343adee7822352405"
